@@ -28,7 +28,7 @@ export const SERVICES = [
   },
   {
     icon: "💰",
-    title: "Proof of Funds (POF)",
+    title: "Proof of Funds Letters",
     slug: "proof-of-funds",
     short: "Verifiable documentation confirming financial capacity, issued by regulated banking institutions.",
     description:
@@ -46,8 +46,8 @@ export const SERVICES = [
   },
   {
     icon: "📋",
-    title: "Performance Bond",
-    slug: "performance-bond",
+    title: "Performance Bonds",
+    slug: "performance-bonds",
     short: "Surety instruments guaranteeing a contractor will complete a project as specified.",
     description:
       "A Performance Bond guarantees that a contractor or supplier will complete their obligations under a contract. If they fail, the bond pays out to the project owner. TFCA facilitates performance bonds through licensed sureties and banking institutions for infrastructure, construction, and supply contracts.",
@@ -72,6 +72,33 @@ export const SERVICES = [
     standards: ["ICC"],
   },
   {
+    icon: "💸",
+    title: "Advance Payment Guarantee (APG)",
+    slug: "advance-payment-guarantee",
+    short: "Bank-backed assurance that advance payment funds are protected in the event of default.",
+    description:
+      "An Advance Payment Guarantee (APG) secures the buyer's upfront payment by ensuring the seller delivers as agreed or refunds the advanced amount. TFCA arranges APGs through licensed banks to protect deposit-based trade transactions.",
+    standards: ["URDG 758"],
+  },
+  {
+    icon: "📌",
+    title: "Bid Bonds",
+    slug: "bid-bond",
+    short: "Guarantees a bidder will enter into contract if awarded a project or tender.",
+    description:
+      "A Bid Bond (or Tender Bond) guarantees that a bidder will enter into a contract if they are awarded a tender. It protects the project owner from bidders who withdraw after winning. TFCA facilitates bid bonds through regulated surety companies and banking institutions.",
+    standards: ["ICC"],
+  },
+  {
+    icon: "🧾",
+    title: "Tender Guarantees",
+    slug: "tender-guarantee",
+    short: "Assures tender issuers that bidders will honour contract terms if selected.",
+    description:
+      "A Tender Guarantee provides confidence to procurement authorities that a bidder will sign the contract and fulfil bid conditions. TFCA arranges tender guarantees through trusted financial partners for public and private sector tenders.",
+    standards: ["ICC"],
+  },
+  {
     icon: "🚀",
     title: "Project Funding",
     slug: "project-funding",
@@ -79,24 +106,6 @@ export const SERVICES = [
     description:
       "TFCA provides structured project financing solutions for large-scale development initiatives across Africa — from infrastructure and energy to real estate and agriculture. We work with institutional investors and development finance institutions to structure funding that meets project requirements.",
     standards: ["KYC/AML", "ICC"],
-  },
-  {
-    icon: "💵",
-    title: "Advance Payment Bond",
-    slug: "advance-payment-bond",
-    short: "Protects buyers who make advance payments, ensuring refund if seller defaults.",
-    description:
-      "An Advance Payment Bond protects a buyer who has made an advance payment to a supplier. If the supplier fails to deliver, the bond ensures the buyer recovers their advance payment. TFCA facilitates these through licensed banking institutions.",
-    standards: ["URDG 758"],
-  },
-  {
-    icon: "📌",
-    title: "Bid Bond",
-    slug: "bid-bond",
-    short: "Guarantees a bidder will enter into contract if awarded a project or tender.",
-    description:
-      "A Bid Bond (or Tender Bond) guarantees that a bidder will enter into a contract if they are awarded a tender. It protects the project owner from bidders who withdraw after winning. TFCA facilitates bid bonds through regulated surety companies and banking institutions.",
-    standards: ["ICC"],
   },
 ];
 

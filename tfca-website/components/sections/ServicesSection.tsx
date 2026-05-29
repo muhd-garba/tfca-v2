@@ -2,8 +2,7 @@
 import Link from "next/link";
 import { SERVICES } from "@/lib/data";
 
-const featured = SERVICES.slice(0, 6);
-const extra = SERVICES.slice(6);
+const featured = SERVICES;
 
 export default function ServicesSection() {
   return (
@@ -13,7 +12,7 @@ export default function ServicesSection() {
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", flexWrap: "wrap", gap: "20px" }}>
         <div>
-          <div style={{ fontSize: "0.62px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
+          <div style={{ fontSize: "0.62rem", letterSpacing: "0.25em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
             <span style={{ width: "30px", height: "1px", background: "#C9A84C", display: "inline-block" }} />
             <span style={{ fontSize: "0.62rem" }}>What We Offer</span>
           </div>
@@ -38,38 +37,9 @@ export default function ServicesSection() {
         ))}
       </div>
 
-      {/* Additional */}
-      <div style={{ marginTop: "40px", paddingTop: "40px", borderTop: "1px solid rgba(201,168,76,0.15)" }}>
-        <p style={{ fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#8899AA", marginBottom: "20px" }}>
-          Additional Instruments
-        </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "14px" }} className="extra-grid">
-          {[...extra, { icon: "🏢", title: "Bank Account Opening", slug: "contact" }, { icon: "📈", title: "Investment Solutions", slug: "contact" }].map((item) => (
-            <Link key={item.title} href={`/services/${item.slug}`}
-              style={{
-                background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,168,76,0.15)",
-                borderRadius: "2px", padding: "16px 18px", display: "flex", alignItems: "center",
-                gap: "10px", textDecoration: "none", transition: "all 0.3s", color: "inherit"
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "rgba(201,168,76,0.06)";
-                e.currentTarget.style.borderColor = "rgba(201,168,76,0.35)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "rgba(255,255,255,0.03)";
-                e.currentTarget.style.borderColor = "rgba(201,168,76,0.15)";
-              }}
-            >
-              <span style={{ fontSize: "1rem" }}>{item.icon}</span>
-              <span style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.75)" }}>{item.title}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-
       <style>{`
-        @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2,1fr) !important; } .extra-grid { grid-template-columns: repeat(2,1fr) !important; } }
-        @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr !important; } .extra-grid { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2,1fr) !important; } }
+        @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr !important; } }
       `}</style>
     </section>
   );
@@ -101,14 +71,14 @@ function ServiceCard({ svc }: { svc: typeof SERVICES[0] }) {
       }}>
         {svc.icon}
       </div>
-      <h3 style={{ fontSize: "0.88rem", fontWeight: 600, letterSpacing: "0.03em", marginBottom: "10px" }}>{svc.title}</h3>
-      <p style={{ fontSize: "0.72rem", color: "#8899AA", lineHeight: 1.8, fontWeight: 300 }}>{svc.short}</p>
-      <div style={{ display: "flex", gap: "6px", marginTop: "16px", flexWrap: "wrap" }}>
+      <h3 style={{ fontSize: "1rem", fontWeight: 700, letterSpacing: "0.02em", marginBottom: "14px", color: "#ffffff" }}>{svc.title}</h3>
+      <p style={{ fontSize: "0.92rem", color: "#c5d0e3", lineHeight: 1.85, fontWeight: 400 }}>{svc.short}</p>
+      <div style={{ display: "flex", gap: "8px", marginTop: "20px", flexWrap: "wrap" }}>
         {svc.standards.map((s) => (
-          <span key={s} style={{ fontSize: "0.58rem", letterSpacing: "0.1em", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.25)", padding: "2px 8px", borderRadius: "2px" }}>{s}</span>
+          <span key={s} style={{ fontSize: "0.72rem", letterSpacing: "0.08em", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.25)", padding: "4px 10px", borderRadius: "2px" }}>{s}</span>
         ))}
       </div>
-      <div style={{ marginTop: "16px", fontSize: "0.65rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#C9A84C", fontWeight: 600 }}>
+      <div style={{ marginTop: "18px", fontSize: "0.78rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#C9A84C", fontWeight: 700 }}>
         Learn More →
       </div>
     </Link>
