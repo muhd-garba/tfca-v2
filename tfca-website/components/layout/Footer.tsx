@@ -31,6 +31,13 @@ export default function Footer() {
           { href: "/services/proof-of-funds", label: "Proof of Funds" },
           { href: "/services/performance-bond", label: "Performance Bond" },
           { href: "/services/project-funding", label: "Project Funding" },
+          { href: "/services/commercial-invoice-finance", label: "Bank Comfort Letter" },
+          { href: "/services/commercial-invoice-finance", label: "Block Funds" },
+          { href: "/services/commercial-invoice-finance", label: "Ready Willing and Able Letter RWA" },
+          { href: "/services/commercial-invoice-finance", label: "Advanced Payment Guarantee" },
+          { href: "/services/commercial-invoice-finance", label: "Performance Bond" },
+          { href: "/services/commercial-invoice-finance", label: "Bid Bond" },
+          { href: "/services/commercial-invoice-finance", label: "Tender Guarantee" },
         ]} />
         <FooterCol title="Company" links={[
           { href: "/about", label: "About Us" },
