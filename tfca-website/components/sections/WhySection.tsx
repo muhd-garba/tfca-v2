@@ -30,10 +30,10 @@ export default function WhySection() {
               <span style={{ width: "30px", height: "1px", background: "#C9A84C", display: "inline-block" }} />
               Why TFCA
             </div>
-            <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 600, lineHeight: 1.15, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.2rem, 3.8vw, 3.2rem)", fontWeight: 700, lineHeight: 1.15, marginBottom: "16px", color: "white" }}>
               Why Choose <span style={{ color: "#C9A84C" }}>TFC African Region</span>
             </h2>
-            <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.9, fontWeight: 300, marginBottom: "36px" }}>
+            <p style={{ fontSize: "0.98rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.9, fontWeight: 400, marginBottom: "36px" }}>
               Your growth is backed by a partner who understands trade, regulation, and risk across the African continent and beyond.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
@@ -45,8 +45,8 @@ export default function WhySection() {
                 >
                   <div style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "2.2rem", fontWeight: 700, color: "rgba(201,168,76,0.2)", lineHeight: 1, flexShrink: 0, width: "38px" }}>{r.num}</div>
                   <div>
-                    <strong style={{ display: "block", fontSize: "0.82rem", fontWeight: 600, marginBottom: "3px" }}>{r.title}</strong>
-                    <span style={{ fontSize: "0.71rem", color: "#8899AA", lineHeight: 1.7, fontWeight: 300 }}>{r.desc}</span>
+                    <strong style={{ display: "block", fontSize: "0.92rem", fontWeight: 700, marginBottom: "3px", color: "white" }}>{r.title}</strong>
+                    <span style={{ fontSize: "0.81rem", color: "#8899AA", lineHeight: 1.7, fontWeight: 400 }}>{r.desc}</span>
                   </div>
                 </div>
               ))}
@@ -66,8 +66,8 @@ export default function WhySection() {
 
             {/* Who we work with */}
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,168,76,0.18)", borderRadius: "4px", padding: "28px" }}>
-              <h3 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "1.3rem", marginBottom: "6px" }}>Who We Work With</h3>
-              <p style={{ fontSize: "0.72rem", color: "#8899AA", marginBottom: "20px" }}>We support clients across every major trade sector</p>
+              <h3 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "1.4rem", marginBottom: "6px", fontWeight: 700, color: "white" }}>Who We Work With</h3>
+              <p style={{ fontSize: "0.82rem", color: "#8899AA", marginBottom: "20px", fontWeight: 400 }}>We support clients across every major trade sector</p>
               {clientTypes.map((c) => (
                 <div key={c.label} style={{ display: "flex", alignItems: "center", gap: "12px", padding: "11px 0", borderBottom: "1px solid rgba(201,168,76,0.1)" }}>
                   <span style={{ fontSize: "1rem" }}>{c.icon}</span>

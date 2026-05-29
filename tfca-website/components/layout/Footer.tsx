@@ -12,12 +12,12 @@ export default function Footer() {
               <Image src="/images/logo.png" alt="TFCA Logo" width={50} height={50} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
             </div>
             <div>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem", color: "#C9A84C", fontWeight: 700, lineHeight: 1.2 }}>Trade Finance Company</div>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.95rem", color: "#C9A84C", fontWeight: 600, lineHeight: 1.2 }}>African Region Ltd</div>
-              <div style={{ fontSize: "0.58rem", color: "#8899AA", letterSpacing: "0.1em" }}>RC No. 8538180</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.15rem", color: "#C9A84C", fontWeight: 700, lineHeight: 1.2 }}>Trade Finance Company</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem", color: "#C9A84C", fontWeight: 700, lineHeight: 1.2 }}>African Region Ltd</div>
+              <div style={{ fontSize: "0.65rem", color: "#8899AA", letterSpacing: "0.1em", fontWeight: 500 }}>RC No. 8538180</div>
             </div>
           </div>
-          <p style={{ fontSize: "0.82rem", color: "#8899AA", lineHeight: 2, fontWeight: 300, marginBottom: "16px" }}>
+          <p style={{ fontSize: "0.92rem", color: "#8899AA", lineHeight: 2, fontWeight: 400, marginBottom: "16px" }}>
             Providing structured trade finance solutions that empower importers, exporters, and entrepreneurs across Africa and worldwide.
           </p>
           <div style={{ fontSize: "0.62rem", letterSpacing: "0.12em", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.25)", display: "inline-block", padding: "5px 12px", borderRadius: "2px" }}>
@@ -49,13 +49,13 @@ export default function Footer() {
       </div>
       <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #C9A84C, transparent)", marginBottom: "28px" }} />
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px" }}>
-        <p style={{ fontSize: "0.72rem", color: "rgba(136,153,170,0.6)" }}>
+        <p style={{ fontSize: "0.80rem", color: "rgba(136,153,170,0.75)", fontWeight: 500 }}>
           © {new Date().getFullYear()} Trade Finance Company African Region Ltd. RC No. 8538180. All rights reserved.
         </p>
         <div style={{ display: "flex", gap: "12px" }}>
           {["Li", "Tw", "Fb"].map((s) => (
             <a key={s} href="#"
-              style={{ width: "34px", height: "34px", border: "1px solid rgba(201,168,76,0.25)", borderRadius: "2px", display: "flex", alignItems: "center", justifyContent: "center", color: "#8899AA", textDecoration: "none", fontSize: "0.7rem", fontWeight: 600 }}
+              style={{ width: "34px", height: "34px", border: "1px solid rgba(201,168,76,0.25)", borderRadius: "2px", display: "flex", alignItems: "center", justifyContent: "center", color: "#8899AA", textDecoration: "none", fontSize: "0.78rem", fontWeight: 700 }}
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#C9A84C"; e.currentTarget.style.color = "#C9A84C"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.25)"; e.currentTarget.style.color = "#8899AA"; }}
             >{s}</a>
@@ -73,12 +73,12 @@ export default function Footer() {
 function FooterCol({ title, links }: { title: string; links: { href: string; label: string }[] }) {
   return (
     <div>
-      <h4 style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "20px", fontWeight: 600 }}>{title}</h4>
+      <h4 style={{ fontSize: "0.78rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "20px", fontWeight: 700 }}>{title}</h4>
       <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
         {links.map((link) => (
           <li key={link.label} style={{ marginBottom: "12px" }}>
             <Link href={link.href}
-              style={{ fontSize: "0.82rem", color: "#8899AA", textDecoration: "none" }}
+              style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", textDecoration: "none", transition: "color 0.3s", fontWeight: 400 }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "#8899AA")}
             >{link.label}</Link>

@@ -19,7 +19,7 @@ export default function ServicePageClient({ svc, others }: { svc: Service; other
               {svc.icon}
             </div>
             <div>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 4vw, 3.5rem)", fontWeight: 600, lineHeight: 1.1, marginBottom: "12px" }}>
+              <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 4vw, 3.4rem)", fontWeight: 700, lineHeight: 1.1, marginBottom: "12px", color: "white" }}>
                 {svc.title}
               </h1>
               <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
@@ -36,8 +36,8 @@ export default function ServicePageClient({ svc, others }: { svc: Service; other
       <section style={{ padding: "80px 5%", background: "#0D1F3C" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 340px", gap: "60px", alignItems: "start" }} className="svc-layout">
           <div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#C9A84C", marginBottom: "20px" }}>Overview</h2>
-            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.75)", lineHeight: 2, fontWeight: 300, marginBottom: "32px" }}>{svc.description}</p>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.9rem", fontWeight: 700, color: "#C9A84C", marginBottom: "20px" }}>Overview</h2>
+            <p style={{ fontSize: "0.98rem", color: "rgba(255,255,255,0.8)", lineHeight: 2, fontWeight: 400, marginBottom: "32px" }}>{svc.description}</p>
             <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "4px", padding: "28px" }}>
               <h3 style={{ fontSize: "0.8rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "16px" }}>Compliance Standards</h3>
               <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
@@ -51,8 +51,8 @@ export default function ServicePageClient({ svc, others }: { svc: Service; other
           {/* Sidebar */}
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "4px", padding: "28px" }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", marginBottom: "12px" }}>Request This Service</h3>
-              <p style={{ fontSize: "0.73rem", color: "#8899AA", lineHeight: 1.7, marginBottom: "20px" }}>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", marginBottom: "12px", fontWeight: 700, color: "white" }}>Request This Service</h3>
+              <p style={{ fontSize: "0.82rem", color: "#8899AA", lineHeight: 1.7, marginBottom: "20px", fontWeight: 400 }}>
                 Speak with a TFCA specialist about your {svc.title} requirements.
               </p>
               <Link href="/contact" style={{ display: "block", background: "linear-gradient(135deg, #C9A84C, #A0792E)", color: "#0D1F3C", padding: "13px", borderRadius: "2px", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", textAlign: "center" }}>
@@ -62,7 +62,7 @@ export default function ServicePageClient({ svc, others }: { svc: Service; other
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,168,76,0.18)", borderRadius: "4px", padding: "24px" }}>
               <h4 style={{ fontSize: "0.68rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#8899AA", marginBottom: "14px" }}>Our Commitment</h4>
               {["Licensed & Regulated Banks", "ICC Compliant", "KYC/AML Verified", "Transparent Process", "Global Acceptance"].map((item) => (
-                <div key={item} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "9px 0", borderBottom: "1px solid rgba(201,168,76,0.08)", fontSize: "0.74rem", color: "rgba(255,255,255,0.75)" }}>
+                <div key={item} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "9px 0", borderBottom: "1px solid rgba(201,168,76,0.08)", fontSize: "0.82rem", color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
                   <span style={{ color: "#C9A84C", fontWeight: 700 }}>✓</span> {item}
                 </div>
               ))}
@@ -74,7 +74,7 @@ export default function ServicePageClient({ svc, others }: { svc: Service; other
 
       {/* Other Services */}
       <section style={{ padding: "80px 5%", background: "#162C50" }}>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, marginBottom: "30px" }}>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.9rem", fontWeight: 700, marginBottom: "30px", color: "white" }}>
           Other <span style={{ color: "#C9A84C" }}>Services</span>
         </h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }} className="others-grid">
@@ -85,8 +85,8 @@ export default function ServicePageClient({ svc, others }: { svc: Service; other
               onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; e.currentTarget.style.borderColor = "rgba(201,168,76,0.18)"; }}
             >
               <div style={{ fontSize: "1.3rem", marginBottom: "12px" }}>{o.icon}</div>
-              <h3 style={{ fontSize: "0.84rem", fontWeight: 600, marginBottom: "8px" }}>{o.title}</h3>
-              <p style={{ fontSize: "0.7rem", color: "#8899AA", lineHeight: 1.7 }}>{o.short}</p>
+              <h3 style={{ fontSize: "0.92rem", fontWeight: 700, marginBottom: "8px", color: "white" }}>{o.title}</h3>
+              <p style={{ fontSize: "0.8rem", color: "#8899AA", lineHeight: 1.7, fontWeight: 400 }}>{o.short}</p>
             </Link>
           ))}
         </div>

@@ -37,10 +37,10 @@ export default function Navbar() {
           <Image src="/images/logo.png" alt="TFCA Logo" width={56} height={56} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", fontWeight: 700, color: "#C9A84C", letterSpacing: "0.03em", lineHeight: 1.2 }}>
+          <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem", fontWeight: 700, color: "#C9A84C", letterSpacing: "0.03em", lineHeight: 1.2 }}>
             Trade Finance Company
           </span>
-          <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.9rem", fontWeight: 600, color: "#C9A84C", letterSpacing: "0.03em", lineHeight: 1.2 }}>
+          <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", fontWeight: 700, color: "#C9A84C", letterSpacing: "0.03em", lineHeight: 1.2 }}>
             African Region Ltd
           </span>
           <span style={{ fontSize: "0.58rem", letterSpacing: "0.18em", color: "#8899AA", textTransform: "uppercase" }}>RC No. 8538180</span>
@@ -51,7 +51,7 @@ export default function Navbar() {
         {navLinks.map((link) => (
           <li key={link.href}>
             <Link href={link.href}
-              style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", transition: "color 0.3s" }}
+              style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: "0.82rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", transition: "color 0.3s" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.8)")}
             >{link.label}</Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
         <div style={{ position: "fixed", top: "80px", left: 0, right: 0, background: "rgba(5,13,26,0.98)", borderBottom: "1px solid rgba(201,168,76,0.2)", padding: "20px 5%", backdropFilter: "blur(12px)" }}>
           {[...navLinks, { href: "/contact", label: "Contact Us" }].map((link) => (
             <Link key={link.href} href={link.href} onClick={() => setMobileOpen(false)}
-              style={{ display: "block", padding: "14px 0", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.82rem", fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase" }}
+              style={{ display: "block", padding: "14px 0", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: "0.88rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}
             >{link.label}</Link>
           ))}
         </div>

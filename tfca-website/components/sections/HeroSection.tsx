@@ -26,12 +26,12 @@ export default function HeroSection() {
           Africa&apos;s Trusted Trade Finance Partner
         </div>
 
-        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3rem, 5.5vw, 4.8rem)", fontWeight: 600, lineHeight: 1.1, marginBottom: "24px" }}>
+        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3.2rem, 5.8vw, 5rem)", fontWeight: 700, lineHeight: 1.1, marginBottom: "24px", color: "white" }}>
           Secure Your Trade
           <span style={{ display: "block", color: "#C9A84C" }}>Across Africa & Beyond</span>
         </h1>
 
-        <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.9, marginBottom: "40px", maxWidth: "540px", fontWeight: 300 }}>
+        <p style={{ fontSize: "1.15rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.9, marginBottom: "40px", maxWidth: "540px", fontWeight: 400 }}>
           Trade Finance Company African Region Ltd provides structured trade finance solutions — Letters of Credit, Bank Guarantees, Proof of Funds, and more — empowering importers, exporters, and entrepreneurs worldwide.
         </p>
 
@@ -53,8 +53,8 @@ export default function HeroSection() {
             { val: "UCP 600", label: "Standard" },
           ].map((s) => (
             <div key={s.label}>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 700, color: "#C9A84C", lineHeight: 1 }}>{s.val}</div>
-              <div style={{ fontSize: "0.68rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#8899AA", marginTop: "5px" }}>{s.label}</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.4rem", fontWeight: 700, color: "#C9A84C", lineHeight: 1 }}>{s.val}</div>
+              <div style={{ fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#8899AA", marginTop: "5px", fontWeight: 500 }}>{s.label}</div>
             </div>
           ))}
         </div>

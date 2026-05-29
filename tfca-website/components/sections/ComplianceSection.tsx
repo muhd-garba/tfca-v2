@@ -24,10 +24,10 @@ export default function ComplianceSection() {
           <span style={{ width: "30px", height: "1px", background: "#C9A84C", display: "inline-block" }} />
           Our Standards
         </div>
-        <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 600, lineHeight: 1.15, marginBottom: "16px" }}>
+        <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.2rem, 3.8vw, 3.2rem)", fontWeight: 700, lineHeight: 1.15, marginBottom: "16px", color: "white" }}>
           Compliance & <span style={{ color: "#C9A84C" }}>Trust Statement</span>
         </h2>
-        <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.9, maxWidth: "560px", fontWeight: 300 }}>
+        <p style={{ fontSize: "0.98rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.9, maxWidth: "560px", fontWeight: 400 }}>
           TFCA operates under a strict governance framework that prioritizes transparency, due diligence, and regulatory adherence in every transaction.
         </p>
       </div>
@@ -44,8 +44,8 @@ export default function ComplianceSection() {
                 {p.icon}
               </div>
               <div>
-                <strong style={{ display: "block", fontSize: "0.84rem", fontWeight: 600, marginBottom: "5px" }}>{p.title}</strong>
-                <span style={{ fontSize: "0.72rem", color: "#8899AA", lineHeight: 1.8, fontWeight: 300 }}>{p.desc}</span>
+                <strong style={{ display: "block", fontSize: "0.94rem", fontWeight: 700, marginBottom: "5px", color: "white" }}>{p.title}</strong>
+                <span style={{ fontSize: "0.82rem", color: "#8899AA", lineHeight: 1.8, fontWeight: 400 }}>{p.desc}</span>
               </div>
             </div>
           ))}

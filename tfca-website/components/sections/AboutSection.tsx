@@ -71,13 +71,13 @@ export default function AboutSection() {
             <span style={{ width: "30px", height: "1px", background: "#A0792E", display: "inline-block" }} />
             Who We Are
           </div>
-          <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 600, lineHeight: 1.15, marginBottom: "20px", color: "#0D1F3C" }}>
+          <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.2rem, 3.8vw, 3.2rem)", fontWeight: 700, lineHeight: 1.15, marginBottom: "20px", color: "#0D1F3C" }}>
             About <span style={{ color: "#A0792E" }}>TFC African Region Ltd</span>
           </h2>
-          <p style={{ fontSize: "0.88rem", color: "rgba(13,31,60,0.65)", lineHeight: 1.9, fontWeight: 300, marginBottom: "16px" }}>
+          <p style={{ fontSize: "0.98rem", color: "rgba(13,31,60,0.7)", lineHeight: 1.9, fontWeight: 400, marginBottom: "16px" }}>
             Trade Finance Company African Region Ltd (TFCA) is a financial consulting company providing structured trade finance solutions that empower importers, exporters, and entrepreneurs across Africa and worldwide.
           </p>
-          <p style={{ fontSize: "0.88rem", color: "rgba(13,31,60,0.65)", lineHeight: 1.9, fontWeight: 300, marginBottom: "36px" }}>
+          <p style={{ fontSize: "0.98rem", color: "rgba(13,31,60,0.7)", lineHeight: 1.9, fontWeight: 400, marginBottom: "36px" }}>
             Our aim is to make trade finance instruments accessible, transparent, and trustworthy — enabling our clients to trade and grow globally with confidence.
           </p>
 
@@ -92,8 +92,8 @@ export default function AboutSection() {
                   {p.icon}
                 </div>
                 <div>
-                  <strong style={{ display: "block", fontSize: "0.82rem", fontWeight: 600, color: "#0D1F3C", marginBottom: "3px" }}>{p.title}</strong>
-                  <span style={{ fontSize: "0.72rem", color: "rgba(13,31,60,0.6)", lineHeight: 1.7, fontWeight: 300 }}>{p.desc}</span>
+                  <strong style={{ display: "block", fontSize: "0.92rem", fontWeight: 700, color: "#0D1F3C", marginBottom: "3px" }}>{p.title}</strong>
+                  <span style={{ fontSize: "0.82rem", color: "rgba(13,31,60,0.65)", lineHeight: 1.7, fontWeight: 400 }}>{p.desc}</span>
                 </div>
               </div>
             ))}

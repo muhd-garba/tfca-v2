@@ -17,7 +17,7 @@ export default function ServicesSection() {
             <span style={{ width: "30px", height: "1px", background: "#C9A84C", display: "inline-block" }} />
             <span style={{ fontSize: "0.62rem" }}>What We Offer</span>
           </div>
-          <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 600, lineHeight: 1.15 }}>
+          <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.2rem, 3.8vw, 3.2rem)", fontWeight: 700, lineHeight: 1.15, color: "white" }}>
             Trade Financial <span style={{ color: "#C9A84C" }}>Instruments</span>
           </h2>
         </div>

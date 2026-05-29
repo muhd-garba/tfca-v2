@@ -21,10 +21,10 @@ export default function ContactSection() {
             <span style={{ width: "30px", height: "1px", background: "#C9A84C", display: "inline-block" }} />
             Get In Touch
           </div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 3.5vw, 2.8rem)", fontWeight: 600, lineHeight: 1.15, marginBottom: "16px" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 3.8vw, 3rem)", fontWeight: 700, lineHeight: 1.15, marginBottom: "16px", color: "white" }}>
             Contact <span style={{ color: "#C9A84C" }}>Us</span>
           </h2>
-          <p style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.9, fontWeight: 300, marginBottom: "40px" }}>
+          <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.9, fontWeight: 400, marginBottom: "40px" }}>
             Ready to secure your trade transactions? Our team of experts is here to help you find the right financial instrument.
           </p>
 
@@ -40,11 +40,11 @@ export default function ContactSection() {
                   {item.icon}
                 </div>
                 <div>
-                  <div style={{ fontSize: "0.68rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "5px" }}>{item.label}</div>
+                  <div style={{ fontSize: "0.78rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "5px", fontWeight: 600 }}>{item.label}</div>
                   {item.link ? (
-                    <a href={item.link} style={{ fontSize: "1rem", color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{item.value}</a>
+                    <a href={item.link} style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.9)", textDecoration: "none", fontWeight: 500 }}>{item.value}</a>
                   ) : (
-                    <div style={{ fontSize: "1rem", color: "rgba(255,255,255,0.85)", lineHeight: 1.5 }}>{item.value}</div>
+                    <div style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.9)", lineHeight: 1.5, fontWeight: 500 }}>{item.value}</div>
                   )}
                 </div>
               </div>
@@ -53,10 +53,10 @@ export default function ContactSection() {
 
           {/* WhatsApp buttons */}
           <div style={{ marginBottom: "36px" }}>
-            <div style={{ fontSize: "0.68rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#8899AA", marginBottom: "14px" }}>WhatsApp Us Directly</div>
+            <div style={{ fontSize: "0.76rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#8899AA", marginBottom: "14px", fontWeight: 500 }}>WhatsApp Us Directly</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               <a href="https://wa.me/2349077504605" target="_blank" rel="noopener noreferrer"
-                style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#25D366", color: "white", padding: "14px 22px", borderRadius: "4px", textDecoration: "none", fontSize: "0.9rem", fontWeight: 600, transition: "all 0.3s" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#25D366", color: "white", padding: "14px 22px", borderRadius: "4px", textDecoration: "none", fontSize: "0.95rem", fontWeight: 700, transition: "all 0.3s" }}
                 onMouseEnter={(e) => { e.currentTarget.style.background = "#20b958"; e.currentTarget.style.transform = "translateY(-2px)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = "#25D366"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
@@ -64,7 +64,7 @@ export default function ContactSection() {
                 +234 907 750 4605
               </a>
               <a href="https://wa.me/2348062250170" target="_blank" rel="noopener noreferrer"
-                style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#25D366", color: "white", padding: "14px 22px", borderRadius: "4px", textDecoration: "none", fontSize: "0.9rem", fontWeight: 600, transition: "all 0.3s" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#25D366", color: "white", padding: "14px 22px", borderRadius: "4px", textDecoration: "none", fontSize: "0.95rem", fontWeight: 700, transition: "all 0.3s" }}
                 onMouseEnter={(e) => { e.currentTarget.style.background = "#20b958"; e.currentTarget.style.transform = "translateY(-2px)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = "#25D366"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
@@ -76,8 +76,8 @@ export default function ContactSection() {
 
           {/* Compliance note */}
           <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "4px", padding: "20px" }}>
-            <div style={{ fontSize: "0.7rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "8px", fontWeight: 600 }}>Compliance Note</div>
-            <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.8 }}>
+            <div style={{ fontSize: "0.76rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "8px", fontWeight: 600 }}>Compliance Note</div>
+            <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, fontWeight: 400 }}>
               All enquiries are subject to KYC/AML verification. Transactions processed under UCP 600, URDG 758, and ISP98.
             </p>
           </div>
