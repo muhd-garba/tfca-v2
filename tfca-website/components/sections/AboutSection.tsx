@@ -31,7 +31,7 @@ export default function AboutSection() {
             overflow: "hidden", position: "relative",
           }}>
             <Image
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&q=80"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80"
               alt="Trade Finance Professionals"
               fill
               style={{ objectFit: "cover" }}

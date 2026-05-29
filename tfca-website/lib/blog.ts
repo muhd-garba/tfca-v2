@@ -6,7 +6,7 @@ export const BLOG_POSTS = [
     date: "May 20, 2025",
     readTime: "5 min read",
     excerpt: "A Letter of Credit (LC) is one of the most powerful tools in international trade. Learn how it protects both importers and exporters, and how TFCA facilitates LCs under UCP 600.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
     content: `
 A Letter of Credit (LC) is a financial document issued by a bank on behalf of an importer (buyer) that guarantees payment to the exporter (seller), provided the exporter meets the specific terms and conditions outlined in the credit.
 
@@ -41,7 +41,7 @@ Contact our team to discuss how a Letter of Credit can secure your next trade tr
     date: "May 14, 2025",
     readTime: "6 min read",
     excerpt: "Both Bank Guarantees and SBLCs offer financial security, but they serve different purposes. This guide breaks down the differences to help you choose the right instrument.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
     content: `
 Bank Guarantees (BGs) and Standby Letters of Credit (SBLCs) are both powerful financial instruments used to provide security in business transactions. While they serve similar purposes, there are key differences that determine which is right for your situation.
 
@@ -88,7 +88,7 @@ The right instrument depends on your specific transaction, counterparty requirem
     date: "May 7, 2025",
     readTime: "7 min read",
     excerpt: "African importers face unique challenges in securing trade finance. This guide covers the key instruments available and how TFCA helps African businesses access international markets.",
-    image: "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
     content: `
 African importers often face significant barriers when accessing international trade finance — from lack of banking relationships to unfamiliarity with instruments like Letters of Credit. Trade Finance Company African Region Ltd was established specifically to bridge this gap.
 

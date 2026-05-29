@@ -80,7 +80,7 @@ export default function ComplianceSection() {
           {/* Photo */}
           <div style={{ borderRadius: "4px", overflow: "hidden", position: "relative", height: "200px" }}>
             <Image
-              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80"
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=80"
               alt="Compliance and Documentation"
               fill style={{ objectFit: "cover" }}
             />

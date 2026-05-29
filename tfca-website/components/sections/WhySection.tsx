@@ -57,7 +57,7 @@ export default function WhySection() {
             {/* Image */}
             <div style={{ borderRadius: "4px", overflow: "hidden", position: "relative", height: "280px", marginBottom: "20px" }}>
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&q=80"
                 alt="African Business Professional"
                 fill style={{ objectFit: "cover" }}
               />
