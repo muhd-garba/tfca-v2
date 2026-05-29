@@ -31,13 +31,12 @@ export default function Footer() {
           { href: "/services/proof-of-funds", label: "Proof of Funds" },
           { href: "/services/performance-bond", label: "Performance Bond" },
           { href: "/services/project-funding", label: "Project Funding" },
-          { href: "/services/commercial-invoice-finance", label: "Bank Comfort Letter" },
-          { href: "/services/commercial-invoice-finance", label: "Block Funds" },
-          { href: "/services/commercial-invoice-finance", label: "Ready Willing and Able Letter RWA" },
-          { href: "/services/commercial-invoice-finance", label: "Advanced Payment Guarantee" },
-          { href: "/services/commercial-invoice-finance", label: "Performance Bond" },
-          { href: "/services/commercial-invoice-finance", label: "Bid Bond" },
-          { href: "/services/commercial-invoice-finance", label: "Tender Guarantee" },
+          { href: "/services/bank-comfort-letters", label: "Bank Comfort Letter" },
+          { href: "/services/blocked-funds", label: "Blocked Funds" },
+          { href: "/services/rwa", label: "Ready, Willing & Able (RWA)" },
+          { href: "/services/advance-payment-guarantee", label: "Advance Payment Guarantee" },
+          { href: "/services/bid-bond", label: "Bid Bond" },
+          { href: "/services/tender-guarantee", label: "Tender Guarantee" },
         ]} />
         <FooterCol title="Company" links={[
           { href: "/about", label: "About Us" },
@@ -83,7 +82,7 @@ function FooterCol({ title, links }: { title: string; links: { href: string; lab
       <h4 style={{ fontSize: "0.78rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "20px", fontWeight: 700 }}>{title}</h4>
       <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
         {links.map((link) => (
-          <li key={link.label} style={{ marginBottom: "12px" }}>
+          <li key={`${link.href}-${link.label}`} style={{ marginBottom: "12px" }}>
             <Link href={link.href}
               style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", textDecoration: "none", transition: "color 0.3s", fontWeight: 400 }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
