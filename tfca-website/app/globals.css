@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dark: #A0792E;
+  --navy: #0D1F3C;
+  --navy-mid: #162C50;
+  --navy-light: #1E3A64;
+  --off-white: #F8F5EF;
+  --border: rgba(201, 168, 76, 0.25);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--navy);
+  color: white;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+
+.gold-text {
+  background: linear-gradient(135deg, #E8C96A, #C9A84C, #A0792E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.form-input {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.25);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+.form-input:focus { border-color: #C9A84C; }
+.form-input::placeholder { color: rgba(255,255,255,0.3); }
+select.form-input option { background: #162C50; color: white; }
+
+/* Increased font sizes to match live site */
+body {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+p { font-size: 1rem; }
+
+.form-input {
+  font-size: 0.95rem !important;
+}
